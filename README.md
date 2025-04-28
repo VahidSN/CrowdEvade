@@ -1,4 +1,4 @@
-# CrowdEvade
+# CrowdEvade (with Unity DOTS)
 
 ![Demo](ReadmeGIF/Demo.gif)
 
@@ -67,7 +67,7 @@ A visual example:
 > - Basic familiarity with Unity DOTS (Entities, Jobs, Burst)
 
 Clone the repository and open it in Unity.  
-The main scene is ready to run — simply press **Play** to see the system in action!
+The main scene is ready to run — make sure the MainSubScene is active and simply press **Play** to see the system in action!
 You can modify the agent behavior settings under the **WanderingConfigAuthoring** component, located on the **AgentsSpawner** GameObject in the subscene.
 
 ---
