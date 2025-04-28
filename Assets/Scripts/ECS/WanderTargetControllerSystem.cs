@@ -3,6 +3,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
 
+[UpdateAfter(typeof(AgentsSpawnerSystem))]
 partial struct WanderTargetControllerSystem : ISystem
 {
     [BurstCompile]

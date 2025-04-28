@@ -5,16 +5,9 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
+[UpdateAfter(typeof(AgentsSpawnerSystem))]
 partial struct AgentWanderingSystem : ISystem
 {
-    [BurstCompile]
-    public void OnCreate(ref SystemState state)
-    {
-        // This RequireForUpdate means the system only updates if at least one entity with the WanderingConfig component exists.
-        // Effectively, this system will not update until the subscene with the WanderingConfig has been loaded.
-        state.RequireForUpdate<WanderingConfig>();
-    }
-
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
